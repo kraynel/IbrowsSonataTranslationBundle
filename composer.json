@@ -1,7 +1,7 @@
 {
-    "name": "ibrows/sonata-translation-bundle",
+    "name": "salim/sonata-translation-bundle",
     "description": "Integration of lexik translation into sonata admin",
-    "keywords": ["ibrows", "lexik", "translation", "sonata"],
+    "keywords": ["salim", "lexik", "translation", "sonata"],
     "type": "symfony-bundle",
     "license": "MIT",
     "require": {
@@ -11,6 +11,6 @@
         "lexik/translation-bundle": "*"
     },
     "autoload": {
-        "psr-4": { "Ibrows\\SonataTranslationBundle\\": "" }
+        "psr-4": { "Salim\\SonataTranslationBundle\\": "" }
     }
 }

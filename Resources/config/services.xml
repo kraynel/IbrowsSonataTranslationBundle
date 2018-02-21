@@ -3,10 +3,10 @@
 <container xmlns="http://symfony.com/schema/dic/services"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
     <services>
         <!-- ORM -->
         <service id="ibrows_sonata_translation.admin.orm"
+                 public="true"
                  class="Ibrows\SonataTranslationBundle\Admin\ORMTranslationAdmin">
             <tag name="sonata.admin" manager_type="orm" group="group.translation"
                  label_catalogue="IbrowsSonataTranslationBundle" label="translation.title"/>
@@ -32,7 +32,5 @@
                 <argument>%ibrows_sonata_translation.emptyPrefixes%</argument>
             </call>
         </service>
-
-
     </services>
 </container>

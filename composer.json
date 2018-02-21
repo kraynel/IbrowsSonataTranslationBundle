@@ -11,6 +11,6 @@
         "lexik/translation-bundle": "*"
     },
     "autoload": {
-        "psr-4": { "Salim\\SonataTranslationBundle\\": "" }
+        "psr-4": { "Ibrows\\SonataTranslationBundle\\": "" }
     }
 }

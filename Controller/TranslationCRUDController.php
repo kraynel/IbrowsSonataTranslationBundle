@@ -40,7 +40,8 @@ class TranslationCRUDController extends CRUDController
         }
 
         /* @var $transUnit \Lexik\Bundle\TranslationBundle\Model\TransUnit */
-        $transUnit = $this->get('lexik_translation.translation_storage')->getTransUnitById($id);
+        $transUnit = $this->get('lexik_translation.data_grid.request_handler')->updateFromRequest($id, $request);
+
         if (!$transUnit) {
             throw new NotFoundHttpException(sprintf('unable to find the object with id : %s', $id));
         }

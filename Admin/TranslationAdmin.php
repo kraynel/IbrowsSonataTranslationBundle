@@ -132,11 +132,11 @@ abstract class TranslationAdmin extends Admin
     public function getTemplate($name)
     {
         if ($name === 'layout') {
-            return 'IbrowsSonataTranslationBundle::translation_layout.html.twig';
+            return '@IbrowsSonataTranslation/translation_layout.html.twig';
         }
 
         if ($name === 'list') {
-            return 'IbrowsSonataTranslationBundle:CRUD:list.html.twig';
+            return '@IbrowsSonataTranslation/CRUD/list.html.twig';
         }
 
         return parent::getTemplate($name);
@@ -176,7 +176,7 @@ abstract class TranslationAdmin extends Admin
         foreach ($localesToShow as $locale) {
             $fieldDescription = $this->modelManager->getNewFieldDescriptionInstance($this->getClass(), $locale);
             $fieldDescription->setTemplate(
-                'IbrowsSonataTranslationBundle:CRUD:base_inline_translation_field.html.twig'
+                '@IbrowsSonataTranslation/CRUD/base_inline_translation_field.html.twig'
             );
             $fieldDescription->setOption('locale', $locale);
             $fieldDescription->setOption('editable', $this->editableOptions);

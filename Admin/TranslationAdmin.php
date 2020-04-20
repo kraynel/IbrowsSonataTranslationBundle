@@ -2,7 +2,7 @@
 
 namespace Ibrows\SonataTranslationBundle\Admin;
 
-use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Route\RouteCollection;
@@ -11,7 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Lexik\Bundle\TranslationBundle\Manager\TransUnitManagerInterface;
 
-abstract class TranslationAdmin extends Admin
+abstract class TranslationAdmin extends AbstractAdmin
 {
     /**
      * @var TransUnitManagerInterface
